@@ -2,14 +2,16 @@ import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { CardInfoComponent } from './components/card-info/card-info.component';
+import { HttpClientModule } from '@angular/common/http';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-      ], imports: [
         CardsComponent,
         CardInfoComponent
+      ], imports: [
+        HttpClientModule
       ]
     }).compileComponents();
   }));
