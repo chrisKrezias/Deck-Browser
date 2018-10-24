@@ -1,5 +1,22 @@
 export const CARDS: any[] = [
-  {name: 'Burial from a Different Dimension', card_type: '', property: '', text: ''},
-  {name: 'Charge of the Light Brigade', card_type: '', property: '', text: ''},
-  {name: 'Infernoid Antra', card_type: '', property: '', text: ''}
+  {name: 'Burial from a Different Dimension'},
+  {name: 'Charge of the Light Brigade'},
+  {name: 'Infernoid Antra'},
+  {name: 'Infernoid Attondel'},
+  {name: 'Infernoid Decatron'},
+  {name: 'Infernoid Devyaty'},
+  {name: 'Infernoid Harmadik'},
+  {name: 'Infernoid Onuncu'},
+  {name: 'Infernoid Patrulea'},
+  {name: 'Infernoid Pirmais'},
+  {name: 'Infernoid Seitsemas'},
+  {name: 'Lyla, Lightsworn Sorceress'},
+  {name: 'Monster Gate'},
+  {name: 'One for One'},
+  {name: 'Raiden, Hand of the Lightsworn'},
+  {name: 'Reasoning'},
+  {name: 'Time-Space Trap Hole'},
+  {name: 'Torrential Tribute'},
+  {name: 'Upstart Goblin'},
+  {name: 'Void Seer'}
 ];

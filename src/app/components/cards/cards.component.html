@@ -1,8 +1,24 @@
-<ul class="heroes">
-    <li *ngFor="let card of cards" [class.selected]="card.name === selectedCardName" (click)="onSelect(card)">
-        <span>{{card.name}}</span>
-        <span>{{card.card_type}}</span>
-    </li>
-</ul>
-
-<app-card-info [card]="selectedCard"></app-card-info>
+<div class="container">
+    <div class="row h-100">
+        <div class="col-md-5 col-sm-12 mh-100" style="overflow:scroll">
+            <ul>
+                <li *ngFor="let card of cards" [class.selected]="card.name === selectedCardName" (click)="onSelect(card)"
+                    class="border border-secondary">
+                    <div class="row">
+                        <div class="col ml-2">
+                            <span>{{card.name}}</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-capitalize text-right mr-2">
+                            <span class="border" style="padding-right:2em;padding-left:2em">{{card.card_type}}</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-7 col-sm-12">
+            <app-card-info [card]="selectedCard"></app-card-info>
+        </div>
+    </div>
+</div>

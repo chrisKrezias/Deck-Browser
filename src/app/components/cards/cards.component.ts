@@ -23,6 +23,9 @@ export class CardsComponent implements OnInit {
         card.text = data.data.text;
       });
     });
+
+    this.selectedCard = this.cards[0];
+    this.selectedCardName = this.cards[0].name;
   }
 
   onSelect(card: any): void {

@@ -1,3 +1,13 @@
-.selected{
-    color: aqua;
+.container {
+  border: 2em solid #8b4513;
+  background-color: #f4a460;
+  height: 80vh;
+}
+
+.selected {
+  background-color: burlywood;
+}
+
+li {
+  list-style-type: none;
 }

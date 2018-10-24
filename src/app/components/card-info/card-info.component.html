@@ -1,7 +1,26 @@
 <div *ngIf="card">
-
-  <h2>{{card.name}}</h2>
-  <img src="http://52.57.88.137/api/card_image/{{card.name}}" alt="{{card.name}}"/>
-  <p>{{card.property}}</p>
-  <p>{{card.text}}</p>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>{{card.name}}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5 col-sm-12">
+      <img src="http://52.57.88.137/api/card_image/{{card.name}}" alt="{{card.name}}" class="img-thumbnail" />
+    </div>
+    <div class="col-md-7 col-sm-12">
+      <div *ngIf="card.property" class="row">
+        <div class="col">
+          <p class="font-weight-bold">Property</p>
+          <p>{{card.property}}</p>
+        </div>
+      </div>
+      <div *ngIf="card.text" class="row">
+        <div class="col">
+          <p class="font-weight-bold">Description</p>
+          <p>{{card.text}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
