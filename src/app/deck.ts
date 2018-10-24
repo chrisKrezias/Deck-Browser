@@ -1,5 +1,5 @@
 export const CARDS: any[] = [
-  'Mr. Nice',
-  'Narco',
-  'Bombasto'
+  {name: 'Burial from a Different Dimension', card_type: '', property: '', text: ''},
+  {name: 'Charge of the Light Brigade', card_type: '', property: '', text: ''},
+  {name: 'Infernoid Antra', card_type: '', property: '', text: ''}
 ];

@@ -1,5 +1,7 @@
 <div *ngIf="card">
 
-    <h2>{{card}} Details</h2>
-
+  <h2>{{card.name}}</h2>
+  <img src="http://52.57.88.137/api/card_image/{{card.name}}" alt="{{card.name}}"/>
+  <p>{{card.property}}</p>
+  <p>{{card.text}}</p>
 </div>

@@ -1,6 +1,7 @@
 <ul class="heroes">
-    <li *ngFor="let card of cards" [class.selected]="card === selectedCard" (click)="onSelect(card)">
-        <span>{{card}}</span>
+    <li *ngFor="let card of cards" [class.selected]="card.name === selectedCardName" (click)="onSelect(card)">
+        <span>{{card.name}}</span>
+        <span>{{card.card_type}}</span>
     </li>
 </ul>
 
