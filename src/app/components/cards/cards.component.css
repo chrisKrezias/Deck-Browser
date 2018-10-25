@@ -1,11 +1,14 @@
-.container {
-  border: 2em solid #8b4513;
-  background-color: #f4a460;
+#main_deck {
+  background-color: white;
   height: 80vh;
 }
 
 .selected {
   background-color: burlywood;
+}
+
+ul {
+  padding-left: 0px;
 }
 
 li {

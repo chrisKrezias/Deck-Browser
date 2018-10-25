@@ -1,1 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
+
+body{
+  background: url('./assets/bg_large.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
