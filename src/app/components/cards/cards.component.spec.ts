@@ -26,4 +26,12 @@ describe('CardsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('#onSelect() should populate #selectedCard and #selectedCardName', () => {
+    const app = fixture.debugElement.componentInstance;
+    const card = {name: 'CardName'};
+    app.onSelect(card);
+    expect(app.selectedCard).toBe(card, 'gets the card');
+    expect(app.selectedCardName).toBe('CardName', 'gets the name of the card');
+  });
 });

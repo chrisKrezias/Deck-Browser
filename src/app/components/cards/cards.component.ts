@@ -1,27 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { CardsService } from '../../services/cards/cards.service';
 import { CARDS } from '../../deck';
 
 @Component({
   selector: 'app-cards',
+  providers: [CardsService],
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.css']
 })
+
 export class CardsComponent implements OnInit {
   cards = CARDS;
   selectedCard: any;
   selectedCardName: string;
-  constructor(private httpClient: HttpClient) {}
-
+  error: any;
+  constructor(private cardsService: CardsService) { }
   ngOnInit() {
     this.cards.map(card => {
-      this.httpClient
-      .get(`http://52.57.88.137/api/card_data/${card.name}`)
+      this.cardsService.getCard(card)
       .subscribe((data: any) => {
         card.card_type = data.data.card_type;
         card.property = data.data.property;
         card.text = data.data.text;
-      });
+      },
+      error => this.error = error);
     });
 
     this.selectedCard = this.cards[0];
